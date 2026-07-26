@@ -17,7 +17,7 @@
    <nav class="fixed top-0 left-0 w-full z-50 nav-blur border-b border-white/5">
     <div class="nav-blur border-b border-white/5">
      <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
-      <a href="index.html" class="font-heading font-bold text-xl text-bone tracking-tight"> <span class="text-glow"></span> ASAD</a>
+      <a href="index.html" class="font-heading font-bold text-xl text-bone tracking-tight"> <i data-lucide="sparkles" class="w-5 h-5 text-glow inline-block align-[-3px] mr-1"></i> ASAD</a>
       <div class="hidden md:flex items-center gap-8 text-sm text-smoke">
        <a href="index.html" class="hover:text-glowLight transition-colors">Home</a> <a href="about.html" class="hover:text-glowLight transition-colors">About</a> <a href="services.html" class="hover:text-glowLight transition-colors">Services</a> <a href="portfolio.html" class="hover:text-glowLight transition-colors">Portfolio</a> <a href="team.html" class="hover:text-glowLight transition-colors">Team</a> <a href="blog.html" class="hover:text-glowLight transition-colors">Blog</a> <a href="https://wa.me/9232363761" class="px-5 py-2 rounded-full bg-glow/10 border border-glow/30 text-glowLight hover:bg-glow/20 transition-all">Contact</a>
       </div><button id="mobileToggle" class="md:hidden text-bone"><i data-lucide="menu" class="w-6 h-6"></i></button>
@@ -55,8 +55,9 @@
      <div class="grid md:grid-cols-2 gap-16 items-center">
       <div class="fade-up flex justify-center">
        <div class="relative">
-        <div class="w-72 h-72 md:w-80 md:h-80 rounded-3xl overflow-hidden border-4 border-purple-600 neon-glow">
-         <img src="img/ASAD.jpg.png" alt="Asad Amin, Co-Founder of ASAD" class="w-full h-full object-cover">
+        <div class="w-72 h-72 md:w-80 md:h-80 rounded-3xl overflow-hidden border-4 border-purple-600 neon-glow relative">
+         <img src="img/asad-amin.jpg" alt="Asad Amin, Co-Founder of ASAD" class="w-full h-full object-cover object-top scale-125">
+         <div class="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent"></div>
         </div>
         <div class="absolute -bottom-3 -right-3 w-20 h-20 rounded-xl bg-panel neon-border flex items-center justify-center neon-glow">
          <span class="font-heading font-bold text-glow text-lg">2</span>
@@ -151,7 +152,7 @@
      </div>
      <div class="grid md:grid-cols-2 gap-8">
       <div class="fade-up card-hover rounded-2xl neon-border bg-panel overflow-hidden">
-       <div class="aspect-video mesh-1 relative flex items-center justify-center"></div>
+       <div class="aspect-video relative overflow-hidden"><img src="img/portfolio-laptop.jpg" alt="EMIRAFIX project screenshot" class="w-full h-full object-cover"></div>
        <div class="p-6">
         <h3 class="font-heading font-semibold text-bone text-lg mb-2"><a href="https://emirafix.com/" target="_blank">  EMIRAFIX – Premium E-commerce Website Shopify</a></h3>
         <p class="text-smoke text-sm mb-4">Custom modern e-commerce website with responsive design, fast performance optimization, advanced product showcase, and seamless user experience.</p>
@@ -159,7 +160,7 @@
        </div>
       </div>
       <div class="fade-up fade-up-d1 card-hover rounded-2xl neon-border bg-panel overflow-hidden">
-       <div class="aspect-video mesh-2 relative flex items-center justify-center"></div>
+       <div class="aspect-video relative overflow-hidden"><img src="img/portfolio-laptop.jpg" alt="INDIQART project screenshot" class="w-full h-full object-cover"></div>
        <div class="p-6">
         <h3 class="font-heading font-semibold text-bone text-lg mb-2"><a href="https://indiqart.in/" target="_blank">  INDIQART – Gadgets & Lifestyle E-commerce Store</a></h3>
         <p class="text-smoke text-sm mb-4">Modern Shopify e-commerce store focused on smart wallets, car accessories, and lifestyle products with optimized performance, responsive UI, and seamless shopping experience.</p>
@@ -240,9 +241,10 @@
      </div>
     </div>
    </section>
-   <section id="contact" class="py-16 sm:py-24 md:py-32 relative">
+   <section id="contact" class="py-16 sm:py-24 relative overflow-hidden">
     <div class="section-divider mb-24"></div>
-    <div class="max-w-3xl mx-auto px-6 text-center">
+    <div class="absolute inset-0 pointer-events-none opacity-60" style="background-image:radial-gradient(circle at 1px 1px, rgba(168,85,247,0.14) 1px, transparent 0); background-size:28px 28px; -webkit-mask-image:radial-gradient(ellipse 60% 55% at 50% 45%, black 30%, transparent 100%); mask-image:radial-gradient(ellipse 60% 55% at 50% 45%, black 30%, transparent 100%);"></div>
+    <div class="max-w-3xl mx-auto px-6 text-center relative z-10">
      <div class="fade-up rounded-3xl neon-border bg-panel p-12 md:p-16 neon-glow-strong relative overflow-hidden">
       <div class="hero-orb w-48 h-48 bg-purple-700/15" style="top:-20%;right:-10%;"></div>
       <div class="hero-orb w-32 h-32 bg-violet-900/20" style="bottom:-10%;left:-5%;"></div>
@@ -258,7 +260,7 @@
     <div class="max-w-6xl mx-auto px-6">
      <div class="flex flex-col md:flex-row items-start justify-between gap-12">
       <div class="fade-up">
-       <a href="index.html" class="font-heading font-bold text-xl text-bone tracking-tight"><span class="text-glow"></span> ASAD </a>
+       <a href="index.html" class="font-heading font-bold text-xl text-bone tracking-tight"><i data-lucide="sparkles" class="w-5 h-5 text-glow inline-block align-[-3px] mr-1"></i> ASAD </a>
        <p class="text-smoke/60 text-sm mt-2 max-w-xs">International digital marketing & web development agency.</p>
        <div class="flex gap-4 flex-wrap mt-4">
         <a href="mailto:asadprofficial@gmail.com" class="px-4 py-2 rounded-full bg-glow/10 text-smoke text-sm hover:scale-105 transition">Email</a>
