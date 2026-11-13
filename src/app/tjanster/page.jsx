@@ -5,7 +5,7 @@ import CtaBand from "@/components/CtaBand";
 
 export const metadata = {
   title: "Tjänster – SEO och webbdesign för småföretag",
-  description: "SEO och webbdesign för småföretag i hela Sverige: SEO-analys, löpande SEO, hemsidor, landningssidor och webbutiker till fast pris.",
+  description: "SEO och webbdesign för småföretag i hela Sverige: SEO-analys, löpande SEO, hemsidor, landningssidor och webbutiker – med tydlig offert.",
   alternates: { canonical: "/tjanster" },
 };
 

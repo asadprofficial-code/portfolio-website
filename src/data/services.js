@@ -9,7 +9,7 @@ export const SERVICES = [
     image: "/img/seo-dashboard.png",
     metaTitle: "SEO-tjänster för småföretag – sökmotoroptimering i hela Sverige",
     metaDescription:
-      "SEO för småföretag i hela Sverige: SEO-analys, sökordsanalys, teknisk SEO, innehåll och länkbygge. Fast pris och en tydlig rapport varje månad.",
+      "SEO för småföretag i hela Sverige: SEO-analys, sökordsanalys, teknisk SEO, innehåll och länkbygge. Tydlig offert och en rapport varje månad.",
     h1: "SEO-tjänster för småföretag",
     tagline: "Sökmotoroptimering som ska ge fler kunder – inte bara bättre placeringar.",
     intro:
@@ -39,7 +39,7 @@ export const SERVICES = [
     whyImage: "/img/seo-dashboard.png",
     why: [
       "Ni pratar direkt med den som gör jobbet – ingen säljare emellan.",
-      "Fast pris skriftligt innan vi börjar.",
+      "Skriftlig offert innan vi börjar.",
       "Vi gör de tekniska ändringarna själva.",
       "Inga köpta länkar och inga löften om förstaplatser.",
       "Rapport på svenska varje månad.",
@@ -47,7 +47,7 @@ export const SERVICES = [
     stepsTitle: "Kom igång med SEO",
     steps: [
       { title: "Genomgång", text: "Ett kort videomöte där vi tittar på sajten, era mål och era konkurrenter." },
-      { title: "Analys och plan", text: "Ni får en prioriterad åtgärdslista och ett fast pris för arbetet." },
+      { title: "Analys och plan", text: "Ni får en prioriterad åtgärdslista och en offert för arbetet." },
       { title: "Start", text: "Vi börjar med det som ger störst effekt och rapporterar varje månad." },
     ],
     alts: [
@@ -161,11 +161,11 @@ export const SERVICES = [
           head: ["Upplägg", "Vad det innebär", "Passar när"],
           rows: [
             ["SEO-analys", "En genomgång med prioriterad åtgärdslista, engångspris", "Ni vill veta vad som behöver göras innan ni bestämmer er"],
-            ["Löpande SEO", "Fast månadspris för analys, åtgärder, texter och rapport", "Ni vill växa stadigt och slippa göra arbetet själva"],
+            ["Löpande SEO", "Månadsupplägg för analys, åtgärder, texter och rapport", "Ni vill växa stadigt och slippa göra arbetet själva"],
             ["Engångsinsats", "En avgränsad uppgift, till exempel teknisk SEO eller en flytt av sajten", "Ni har ett specifikt problem som ska lösas"],
           ],
         },
-        after: ["Efter en kort genomgång får ni ett fast pris skriftligt. Ni betalar aldrig för timmar ni inte har godkänt."],
+        after: ["Efter en kort genomgång får ni en skriftlig offert. Ni betalar aldrig för arbete ni inte har godkänt."],
       },
       {
         h2: "Hur lång tid tar SEO?",
@@ -202,7 +202,7 @@ export const SERVICES = [
       },
     ],
     faq: [
-      { q: "Vad kostar SEO för ett småföretag?", a: "Det beror på sajtens storlek och konkurrensen i er bransch. Efter en kort genomgång får ni ett fast pris för analysen eller ett fast månadspris för löpande SEO." },
+      { q: "Vad kostar SEO för ett småföretag?", a: "Det beror på sajtens storlek och konkurrensen i er bransch. Efter en kort genomgång får ni en skriftlig offert för analysen eller för löpande SEO." },
       { q: "Hur lång tid tar det innan vi syns bättre på Google?", a: "Tekniska förbättringar kan märkas efter några veckor. Nytt innehåll tar oftast några månader. Vi mäter från dag ett så att ni ser utvecklingen." },
       { q: "Kan ni garantera en förstaplats?", a: "Nej, det kan ingen ärligt lova. Vi lovar ett tydligt arbetssätt och rapporter som visar vad som har gjorts och vilken effekt det har haft." },
       { q: "Arbetar ni med företag i hela Sverige?", a: "Ja. Vi arbetar på distans och har möten via video, så det spelar ingen roll var i Sverige ni finns." },
@@ -217,13 +217,13 @@ export const SERVICES = [
     name: "Webbdesign",
     short: "Hemsidor, WordPress-sajter, landningssidor och webbutiker för småföretag.",
     image: "/img/web-dev-workspace.png",
-    metaTitle: "Webbdesign för småföretag – hemsida till fast pris",
+    metaTitle: "Webbdesign för småföretag – hemsida som syns i Google",
     metaDescription:
-      "Webbdesign för småföretag i hela Sverige: hemsida, WordPress-sajt, landningssida eller webbutik. Mobilanpassat, snabbt och byggt för Google – till fast pris.",
+      "Webbdesign för småföretag i hela Sverige: hemsida, WordPress-sajt, landningssida eller webbutik. Mobilanpassat, snabbt och byggt för Google – med tydlig offert.",
     h1: "Webbdesign för småföretag",
     tagline: "En hemsida som ser proffsig ut, laddar snabbt och ger förfrågningar.",
     intro:
-      "Vi designar och bygger hemsidor för småföretag i hela Sverige – från en enkel företagssajt till en webbutik. Ni får ett fast pris innan vi börjar och en sajt som är byggd för att synas i Google.",
+      "Vi designar och bygger hemsidor för småföretag i hela Sverige – från en enkel företagssajt till en webbutik. Ni får en skriftlig offert innan vi börjar och en sajt som är byggd för att synas i Google.",
     bullets: [
       "Design som passar ert varumärke och är lika tydlig på telefonen som på datorn.",
       "Snabb laddning och ren kod som gör det lättare att ranka.",
@@ -247,7 +247,7 @@ export const SERVICES = [
     whyTitle: "Därför väljer småföretag oss för sin hemsida",
     whyImage: "/img/web-dev-workspace.png",
     why: [
-      "Fast pris och tidsplan skriftligt innan vi börjar.",
+      "Offert och tidsplan skriftligt innan vi börjar.",
       "SEO-grunden ingår alltid – inte ett tillägg.",
       "Ni äger sajten, domänen och innehållet.",
       "Ni kan själva ändra texter och bilder.",
@@ -256,7 +256,7 @@ export const SERVICES = [
     stepsTitle: "Kom igång med er nya hemsida",
     steps: [
       { title: "Videomöte", text: "Vi går igenom verksamheten, målgruppen och vad hemsidan ska uppnå." },
-      { title: "Förslag och design", text: "Ni får förslag, fast pris och en design att godkänna innan bygget." },
+      { title: "Förslag och design", text: "Ni får förslag, offert och en design att godkänna innan bygget." },
       { title: "Bygge och lansering", text: "Vi bygger i en testmiljö, lanserar och visar hur ni sköter sajten." },
     ],
     alts: [
@@ -301,7 +301,7 @@ export const SERVICES = [
         ordered: true,
         bullets: [
           "Videomöte: vi går igenom verksamheten, målgruppen, nuvarande sajt och konkurrenter.",
-          "Förslag och fast pris: ni får ett skriftligt förslag med sidor, funktioner och tidsplan.",
+          "Förslag och offert: ni får ett skriftligt förslag med sidor, funktioner, tidsplan och pris.",
           "Struktur och design: vi tar fram sidornas upplägg och utseende som ni godkänner.",
           "Bygge: vi bygger i en testmiljö där ni kan klicka runt och lämna synpunkter.",
           "Innehåll: texter och bilder läggs in och anpassas för sökmotorer.",
@@ -319,7 +319,7 @@ export const SERVICES = [
         h2: "Vad kostar en hemsida?",
         body: [
           "Priset beror främst på hur många sidor sajten ska ha och vilka funktioner som behövs. Bokning, inloggning, avancerade formulär och kopplingar till andra system tar mest tid. En webbutik blir oftast dyrare än en vanlig hemsida, eftersom betalning, frakt och produkter ska sättas upp.",
-          "Efter första mötet får ni ett fast pris. Det ändras inte om ni inte själva vill lägga till något.",
+          "Efter första mötet får ni en skriftlig offert. Vill ni lägga till något längre fram får ni en ny offert innan vi gör det.",
         ],
       },
       {
@@ -344,7 +344,7 @@ export const SERVICES = [
         h2: "Underhåll och support efter lansering",
         body: [
           "En hemsida behöver skötas. Plugins och system behöver uppdateras, säkerhetskopior tas och små ändringar göras. Annars blir sajten långsammare och mer sårbar för varje månad.",
-          "Vill ni slippa tänka på det erbjuder vi underhåll till fast månadspris: uppdateringar, säkerhetskopior, övervakning och en viss tid för ändringar varje månad.",
+          "Vill ni slippa tänka på det erbjuder vi underhåll som ett månadsavtal: uppdateringar, säkerhetskopior, övervakning och en viss tid för ändringar varje månad.",
         ],
       },
       {
@@ -352,7 +352,7 @@ export const SERVICES = [
         body: ["Titta på det här innan ni bestämmer er:"],
         bullets: [
           "Tidigare arbeten som liknar det ni behöver.",
-          "Ett skriftligt fast pris och en tidsplan.",
+          "En skriftlig offert och en tidsplan.",
           "Att ni äger sajten, domänen och innehållet efteråt.",
           "Att SEO finns med från början och inte är ett dyrt tillägg.",
           "Vad som händer efter lansering – support, ändringar och uppdateringar.",
@@ -361,13 +361,13 @@ export const SERVICES = [
       },
     ],
     faq: [
-      { q: "Vad kostar en hemsida för ett småföretag?", a: "Det beror på antal sidor och funktioner. Efter ett kort videomöte får ni ett fast pris skriftligt." },
+      { q: "Vad kostar en hemsida för ett småföretag?", a: "Det beror på antal sidor och funktioner. Efter ett kort videomöte får ni en skriftlig offert." },
       { q: "Hur snabbt kan en ny hemsida vara klar?", a: "En mindre företagssajt tar oftast några veckor. En webbutik eller en större sajt tar längre tid. Tidsplanen står i förslaget." },
       { q: "Kan vi uppdatera hemsidan själva?", a: "Ja. Vi bygger så att ni kan ändra texter och bilder själva, och vi visar hur det går till vid lanseringen." },
       { q: "Bygger ni webbutiker?", a: "Ja, i Shopify eller WooCommerce, med betalning, frakt och produktsidor som är anpassade för Google." },
       { q: "Vem äger hemsidan när den är klar?", a: "Det gör ni – sajten, domänen och allt innehåll." },
       { q: "Ingår SEO när ni bygger en hemsida?", a: "Den tekniska SEO-grunden ingår alltid: rubriker, metadata, sitemap, laddtid och omdirigeringar från gamla adresser. Löpande SEO kan läggas till." },
-      { q: "Ingår underhåll efter lansering?", a: "Det kan läggas till som ett fast månadspris med uppdateringar, säkerhetskopior och ändringar." },
+      { q: "Ingår underhåll efter lansering?", a: "Det kan läggas till som ett månadsavtal med uppdateringar, säkerhetskopior och ändringar." },
       { q: "Arbetar ni med företag i hela Sverige?", a: "Ja. Vi arbetar på distans och har alla möten via video." },
     ],
   },

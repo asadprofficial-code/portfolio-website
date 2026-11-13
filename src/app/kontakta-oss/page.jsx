@@ -4,7 +4,7 @@ import SectionHead from "@/components/sections/SectionHead";
 import { SITE } from "@/lib/site";
 
 export const metadata = {
-  title: "Kontakta oss – få ett förslag och fast pris",
+  title: "Kontakta oss – få ett förslag och en offert",
   description: "Berätta om ert projekt så återkommer vi inom en arbetsdag med ett förslag. Vi arbetar med SEO och webbdesign för småföretag i hela Sverige.",
   alternates: { canonical: "/kontakta-oss" },
 };
@@ -12,7 +12,7 @@ export const metadata = {
 const NEXT = [
   "Vi läser er förfrågan och svarar inom en arbetsdag.",
   "Vi föreslår en tid för ett kort videomöte.",
-  "Ni får ett skriftligt förslag med fast pris.",
+  "Ni får ett skriftligt förslag med offert.",
 ];
 
 const WHO = [
@@ -43,7 +43,7 @@ export default function KontaktaOssPage() {
         <div className="container-site"><div className="max-w-3xl">
           <p className="eyebrow !text-[#c4b5fd]">Kontakt</p>
           <h1 className="mt-3 text-[40px] font-extrabold leading-[0.98] tracking-[-0.05em] sm:text-[60px]">Kontakta oss</h1>
-          <p className="mt-5 text-lg text-white/70">Berätta vad ni behöver hjälp med så får ni ett förslag och ett fast pris. {SITE.responseTime}</p>
+          <p className="mt-5 text-lg text-white/70">Berätta vad ni behöver hjälp med så får ni ett förslag och en offert. {SITE.responseTime}</p>
         </div></div>
       </section>
 

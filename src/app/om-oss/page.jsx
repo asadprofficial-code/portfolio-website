@@ -11,7 +11,7 @@ import FaqList from "@/components/FaqList";
 
 export const metadata = {
   title: "Om oss – SEO och webbdesign för småföretag",
-  description: "Vi är en liten byrå som arbetar med SEO och webbdesign för småföretag i hela Sverige. Fast pris, direktkontakt och möten via video.",
+  description: "Vi är en liten byrå som arbetar med SEO och webbdesign för småföretag i hela Sverige. Tydlig offert, direktkontakt och möten via video.",
   alternates: { canonical: "/om-oss" },
 };
 
@@ -32,7 +32,7 @@ const TEAM = [
 
 const VALUES = [
   { t: "Ärlighet", d: "Vi lovar aldrig placeringar i Google. Vi lovar ett tydligt arbetssätt och visar vad som har gjorts." },
-  { t: "Fast pris", d: "Ni får priset skriftligt innan vi börjar – inga överraskningar på fakturan." },
+  { t: "Tydlig offert", d: "Ni får en skriftlig offert innan vi börjar – inga överraskningar på fakturan." },
   { t: "Närhet", d: "Ni pratar direkt med dem som gör jobbet, inte via en säljare." },
 ];
 
@@ -50,7 +50,7 @@ export default function OmOssPage() {
         crumbs={[{ href: "/", label: "Hem" }, { label: "Om oss" }]}
         title="Om oss"
         tagline="En liten byrå för SEO och webbdesign."
-        description="Vi hjälper småföretag i hela Sverige att synas på Google och få en hemsida som ger förfrågningar – till fast pris och med direktkontakt."
+        description="Vi hjälper småföretag i hela Sverige att synas på Google och få en hemsida som ger förfrågningar – med tydlig offert och direktkontakt."
         primary={{ href: "/kontakta-oss", label: "Kontakta oss" }}
         secondary={{ href: "#fakta", label: "Fakta om oss" }}
         tall={false}
@@ -61,7 +61,7 @@ export default function OmOssPage() {
           <SectionHead eyebrow="Vilka vi är" title="Byråns arbetssätt med en frilansares närhet." />
           <div className="prose-site">
             <p>Vi startade för att småföretag ofta hamnar mellan två stolar: stora byråer är för dyra, och billiga lösningar ger en hemsida som ingen hittar.</p>
-            <p>Hos oss får ni en tydlig process, ett fast pris och samma kontaktperson från första mötet till lansering – och efteråt om ni vill fortsätta med SEO.</p>
+            <p>Hos oss får ni en tydlig process, en skriftlig offert och samma kontaktperson från första mötet till lansering – och efteråt om ni vill fortsätta med SEO.</p>
           </div>
         </div>
       </section>
@@ -117,7 +117,7 @@ export default function OmOssPage() {
         title="Varför välja oss."
         bullets={[
           "Ett team för både hemsida och SEO – inga glapp mellan leverantörer.",
-          "Fast pris och tidsplan skriftligt.",
+          "Offert och tidsplan skriftligt.",
           "Ni äger allt vi bygger.",
           "Rapporter på svenska som visar vad som har gjorts.",
         ]}

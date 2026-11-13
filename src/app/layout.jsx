@@ -14,7 +14,7 @@ export const metadata = {
     template: `%s | ${SITE.name}`,
   },
   description:
-    "SEO och webbdesign för småföretag i hela Sverige. Hemsidor som syns i Google, fast pris efter genomgång och direktkontakt med dem som gör jobbet.",
+    "SEO och webbdesign för småföretag i hela Sverige. Hemsidor som syns i Google, tydlig offert efter genomgång och direktkontakt med dem som gör jobbet.",
   alternates: { canonical: "/" },
   openGraph: { type: "website", locale: "sv_SE", siteName: SITE.name, images: [absoluteUrl("/img/homepage-hero.png")] },
   robots: { index: true, follow: true },

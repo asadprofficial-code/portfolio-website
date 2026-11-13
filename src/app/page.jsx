@@ -17,7 +17,7 @@ export const metadata = { alternates: { canonical: "/" } };
 
 const FAQ = [
   { q: "Var finns ni?", a: `${SITE.location} Alla möten sker via video, och vi svarar på svenska och engelska.` },
-  { q: "Vad kostar det?", a: "Det beror på omfattningen. Efter en kort genomgång får ni ett fast pris skriftligt, så att ni vet kostnaden innan arbetet börjar." },
+  { q: "Vad kostar det?", a: "Det beror på omfattningen. Efter en kort genomgång får ni en skriftlig offert, så att ni vet kostnaden innan arbetet börjar." },
   { q: "Kan ni förbättra en hemsida som redan finns?", a: "Ja. Vi tar över och förbättrar befintliga hemsidor och webbutiker. Vi börjar alltid med en genomgång av det som finns." },
   { q: "Arbetar ni med både SEO och hemsidor?", a: "Ja. Vi bygger hemsidor med SEO från start och kan sedan fortsätta med löpande SEO, så att ni bara har en leverantör." },
 ];
@@ -34,7 +34,7 @@ export default function HomePage() {
         image="/img/homepage-hero.png"
         title="SEO och webbdesign för småföretag i hela Sverige"
         tagline="Hemsidor som syns i Google – och ger förfrågningar."
-        description="Vi bygger hemsidor och webbutiker och arbetar med SEO för småföretag. Ni får ett fast pris efter en kort genomgång och pratar direkt med dem som gör jobbet."
+        description="Vi bygger hemsidor och webbutiker och arbetar med SEO för småföretag. Ni får en tydlig offert efter en kort genomgång och pratar direkt med dem som gör jobbet."
         primary={{ href: "/kontakta-oss", label: "Kontakta oss" }}
         secondary={{ href: "#tjanster", label: "Våra tjänster" }}
       />
@@ -43,7 +43,7 @@ export default function HomePage() {
       <section className="bg-white py-24">
         <div className="container-site mx-auto max-w-3xl text-center">
           <p className="eyebrow">SEO · Webbdesign</p>
-          <h2 className="mt-3 text-[30px] font-extrabold leading-[1.05] tracking-[-0.04em] sm:text-[48px]">Mer synlighet. Fler kunder. Ett fast pris.</h2>
+          <h2 className="mt-3 text-[30px] font-extrabold leading-[1.05] tracking-[-0.04em] sm:text-[48px]">Mer synlighet. Fler kunder. Tydliga villkor.</h2>
           <p className="lead mt-5">
             De flesta småföretag har en hemsida som ingen hittar. Vi bygger sajter som är tydliga, snabba och optimerade för Google från början –
             och hjälper er sedan att klättra i sökresultaten med SEO.
@@ -81,7 +81,7 @@ export default function HomePage() {
         title="Därför väljer småföretag oss"
         bullets={[
           "Ni pratar direkt med dem som gör jobbet.",
-          "Fast pris skriftligt innan vi börjar.",
+          "Skriftlig offert innan vi börjar.",
           "SEO ingår från start när vi bygger.",
           "Inga löften om förstaplatser – bara ett tydligt arbetssätt.",
           "Svar inom en arbetsdag.",
@@ -93,7 +93,7 @@ export default function HomePage() {
         title="Så kommer ni igång"
         steps={[
           { title: "Videomöte", text: "Vi går igenom er verksamhet, er hemsida och vad ni vill uppnå." },
-          { title: "Förslag och fast pris", text: "Ni får ett skriftligt förslag med vad som ingår, tidsplan och pris." },
+          { title: "Förslag och offert", text: "Ni får ett skriftligt förslag med vad som ingår, tidsplan och offert." },
           { title: "Start", text: "Vi sätter igång och stämmer av löpande tills allt är klart." },
         ]}
       />
