@@ -11,7 +11,7 @@ mv "$API" "$PARK"
 export GH_PAGES=1
 export NEXT_PUBLIC_BASE_PATH="${NEXT_PUBLIC_BASE_PATH:-/portfolio-website}"
 export NEXT_PUBLIC_SITE_URL="${NEXT_PUBLIC_SITE_URL:-https://asadprofficial-code.github.io/portfolio-website}"
-export NEXT_PUBLIC_FORM_ENDPOINT="${NEXT_PUBLIC_FORM_ENDPOINT:-https://formsubmit.co/ajax/asadprofficial@gmail.com}"
+export NEXT_PUBLIC_FORM_ENDPOINT="${NEXT_PUBLIC_FORM_ENDPOINT:-https://formsubmit.co/ajax/f04c3d7e32d88098c28c863849241b4}"
 (cd "$ROOT" && rm -rf .next out && npx next build)
 touch "$ROOT/out/.nojekyll"          # annars ignorerar GitHub Pages mappen _next
 # Gamla .html-adresser → nya sidor (meta refresh + canonical)
