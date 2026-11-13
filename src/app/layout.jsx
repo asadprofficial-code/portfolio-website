@@ -3,7 +3,7 @@ import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import CookieConsent from "@/components/CookieConsent";
-import { SITE } from "@/lib/site";
+import { SITE, absoluteUrl } from "@/lib/site";
 
 const GA_ID = process.env.NEXT_PUBLIC_GA_ID;
 
@@ -16,7 +16,7 @@ export const metadata = {
   description:
     "Vi bygger Shopify-butiker och webbplatser och arbetar med SEO för företag i hela Sverige. Fast pris efter genomgång och videomöten på distans.",
   alternates: { canonical: "/" },
-  openGraph: { type: "website", locale: "sv_SE", siteName: SITE.name, images: ["/img/homepage-hero.png"] },
+  openGraph: { type: "website", locale: "sv_SE", siteName: SITE.name, images: [absoluteUrl("/img/homepage-hero.png")] },
   robots: { index: true, follow: true },
 };
 

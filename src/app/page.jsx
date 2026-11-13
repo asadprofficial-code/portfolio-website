@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Image from "next/image";
+import Image from "@/components/Img";
 import { SERVICES } from "@/data/services";
 import { VISIBLE_PROJECTS } from "@/data/projects";
 import { SITE } from "@/lib/site";

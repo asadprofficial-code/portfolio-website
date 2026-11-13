@@ -14,6 +14,11 @@ export const SITE = {
   responseTime: "Vi svarar inom en arbetsdag.",
 };
 
+// GitHub Pages-bygget använder trailingSlash – adresserna i sitemap/canonical ska matcha.
+const TRAILING = process.env.GH_PAGES === "1";
+
 export function absoluteUrl(path = "/") {
-  return `${SITE.url}${path === "/" ? "" : path}`;
+  if (/\.[a-z0-9]+$/i.test(path)) return `${SITE.url}${path}`; // filer, t.ex. bilder
+  if (path === "/") return TRAILING ? `${SITE.url}/` : SITE.url;
+  return `${SITE.url}${path}${TRAILING && !path.endsWith("/") ? "/" : ""}`;
 }

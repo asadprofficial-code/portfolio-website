@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Image from "next/image";
+import Image from "@/components/Img";
 import { notFound } from "next/navigation";
 import { SERVICES, getService } from "@/data/services";
 import ContactForm from "@/components/ContactForm";
@@ -20,7 +20,7 @@ export async function generateMetadata({ params }) {
     title: s.metaTitle,
     description: s.metaDescription,
     alternates: { canonical: `/tjanster/${s.slug}` },
-    openGraph: { title: s.metaTitle, description: s.metaDescription, images: [s.image] },
+    openGraph: { title: s.metaTitle, description: s.metaDescription, images: [absoluteUrl(s.image)] },
   };
 }
 

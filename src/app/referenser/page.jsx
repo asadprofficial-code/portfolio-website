@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image from "@/components/Img";
 import { VISIBLE_PROJECTS } from "@/data/projects";
 import CtaBand from "@/components/CtaBand";
 

@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image from "@/components/Img";
 import { SITE } from "@/lib/site";
 import CtaBand from "@/components/CtaBand";
 

@@ -5,6 +5,28 @@ import Link from "next/link";
 import { SERVICES } from "@/data/services";
 import { trackEvent } from "@/lib/tracking";
 
+// Vercel: egen API (/api/contact). GitHub Pages: FormSubmit (NEXT_PUBLIC_FORM_ENDPOINT).
+const FORM_ENDPOINT = process.env.NEXT_PUBLIC_FORM_ENDPOINT || "";
+
+function toFormSubmit(form) {
+  const service = SERVICES.find((s) => s.slug === form.service)?.name || "Annat";
+  return {
+    Namn: form.name,
+    "E-post": form.email,
+    Företag: form.company || "—",
+    Webbplats: form.website || "—",
+    Tjänst: service,
+    Meddelande: form.message,
+    _replyto: form.email,
+    _subject: `Ny förfrågan från webbplatsen — ${service}`,
+    _template: "table",
+    _captcha: "false",
+    _honey: form.company_site,
+    _autoresponse:
+      "Tack för ditt meddelande! Vi har tagit emot din förfrågan och återkommer inom en arbetsdag. Med vänliga hälsningar, ASAD",
+  };
+}
+
 const EMPTY = { name: "", email: "", company: "", website: "", service: "", message: "", company_site: "", consent: false };
 
 export default function ContactForm({ defaultService = "" }) {
@@ -18,13 +40,16 @@ export default function ContactForm({ defaultService = "" }) {
     e.preventDefault();
     setStatus({ state: "sending", message: "" });
     try {
-      const res = await fetch("/api/contact", {
+      if (form.company_site) throw new Error("Något gick fel. Försök igen.");
+      if (!form.consent) throw new Error("Godkänn att vi behandlar dina uppgifter för att kunna svara.");
+      const res = await fetch(FORM_ENDPOINT || "/api/contact", {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(form),
+        headers: { "Content-Type": "application/json", Accept: "application/json" },
+        body: JSON.stringify(FORM_ENDPOINT ? toFormSubmit(form) : form),
       });
       const data = await res.json().catch(() => ({}));
-      if (!res.ok) throw new Error(data.error || "Något gick fel. Försök igen.");
+      const failed = !res.ok || data.success === "false" || data.success === false;
+      if (failed) throw new Error(data.error || "Något gick fel. Försök igen eller mejla oss.");
       // generate_lead skickas BARA när förfrågan har kommit fram (samma som Techknight).
       // Markera endast generate_lead som nyckelhändelse i GA4 → Admin → Events.
       trackEvent("generate_lead", { form_name: "kontaktformular", service: form.service || "annat" });
