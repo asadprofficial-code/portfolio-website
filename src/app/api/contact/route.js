@@ -3,7 +3,8 @@ import { sendMail, getReceiverEmails, escapeHtml, renderEmailLayout, renderDetai
 import { SITE } from "@/lib/site";
 import { SERVICES } from "@/data/services";
 
-const LIMITS = { name: 100, email: 200, company: 150, website: 200, message: 5000 };
+const LIMITS = { name: 100, email: 200, phone: 20, company: 150, website: 200, message: 5000 };
+const CONTACT_WAYS = { epost: "E-post", telefon: "Telefon", video: "Videomöte" };
 const WINDOW_MS = 10 * 60 * 1000;
 const MAX_PER_WINDOW = 5;
 const hits = new Map(); // enkel spärr per IP (per serverinstans)
@@ -42,6 +43,8 @@ export async function POST(request) {
 
   const name = clean(body.name, LIMITS.name);
   const email = clean(body.email, LIMITS.email);
+  const phone = clean(body.phone, LIMITS.phone);
+  const contactWay = CONTACT_WAYS[clean(body.contactWay, 20)] || "E-post";
   const company = clean(body.company, LIMITS.company);
   const website = clean(body.website, LIMITS.website);
   const message = clean(body.message, LIMITS.message);
@@ -50,6 +53,9 @@ export async function POST(request) {
 
   if (!name || !email || !isValidEmail(email)) {
     return NextResponse.json({ error: "Namn och en giltig e-postadress krävs." }, { status: 400 });
+  }
+  if (contactWay === "Telefon" && phone.replace(/\D/g, "").length < 7) {
+    return NextResponse.json({ error: "Skriv ett telefonnummer så att vi kan ringa." }, { status: 400 });
   }
   if (!message) {
     return NextResponse.json({ error: "Skriv några rader om vad du behöver hjälp med." }, { status: 400 });
@@ -75,6 +81,8 @@ export async function POST(request) {
         bodyHtml: `${renderDetailRows([
           ["Namn", escapeHtml(name)],
           ["E-post", `<a href="mailto:${escapeHtml(email)}" style="color:#0f6b7d;text-decoration:none;">${escapeHtml(email)}</a>`],
+          ["Telefon", phone ? `<a href="tel:${escapeHtml(phone.replace(/[^+\d]/g, ""))}" style="color:#5b21b6;text-decoration:none;">${escapeHtml(phone)}</a>` : "—"],
+          ["Vill bli kontaktad via", escapeHtml(contactWay)],
           ["Företag", escapeHtml(company || "—")],
           ["Webbplats", escapeHtml(website || "—")],
           ["Tjänst", escapeHtml(service)],

@@ -15,7 +15,7 @@ export default function IntegritetspolicyPage() {
         <p>{SITE.legalName} ansvarar för behandlingen av de personuppgifter som beskrivs här. Kontakt: <a className="text-brand" href={`mailto:${SITE.email}`}>{SITE.email}</a>.</p>
 
         <h2 className="h2 mb-3 mt-8 !text-xl">Vilka uppgifter vi samlar in</h2>
-        <p>När du använder kontaktformuläret sparar vi namn, e-postadress, företag, webbplats och det du skriver i meddelandet. Uppgifterna skickas till vår e-post.</p>
+        <p>När du använder kontaktformuläret sparar vi namn, e-postadress, telefonnummer (om du anger det), hur du vill bli kontaktad, företag, webbplats och det du skriver i meddelandet. Uppgifterna skickas till vår e-post.</p>
 
         <h2 className="h2 mb-3 mt-8 !text-xl">Varför och med vilken rätt</h2>
         <p>Vi använder uppgifterna för att besvara din förfrågan och, om du vill, för att lämna ett förslag. Den rättsliga grunden är ditt samtycke och vårt berättigade intresse av att svara på förfrågningar.</p>
