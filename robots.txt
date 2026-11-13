@@ -1,0 +1,5 @@
+User-Agent: *
+Allow: /
+Disallow: /api/
+
+Sitemap: https://asadprofficial-code.github.io/portfolio-website/sitemap.xml
