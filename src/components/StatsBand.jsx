@@ -2,10 +2,11 @@ import { VISIBLE_PROJECTS } from "@/data/projects";
 
 // Bara siffror som går att kontrollera på sajten – inga påhittade resultat.
 export default function StatsBand() {
+  const swedish = VISIBLE_PROJECTS.filter((p) => p.type.includes("Sverige")).length;
   const stats = [
-    { value: `${VISIBLE_PROJECTS.length}`, label: "projekt visas under Referenser" },
-    { value: "1", label: "fast pris – innan arbetet börjar" },
-    { value: "1", label: "arbetsdag – så snabbt svarar vi" },
+    { value: `${swedish}`, label: "svenska företag vi gör SEO för" },
+    { value: `${VISIBLE_PROJECTS.length}`, label: "projekt under Referenser" },
+    { value: "24 h", label: "svar inom en arbetsdag" },
     { value: "2", label: "grundare som gör jobbet själva" },
   ];
   return (
