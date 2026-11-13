@@ -9,7 +9,7 @@ export default function StatsBand() {
     { value: "2", label: "grundare som gör jobbet själva" },
   ];
   return (
-    <section className="mt-24 bg-ink text-white">
+    <section className="bg-[#110d1f] text-white">
       <div className="container-site grid gap-8 py-14 sm:grid-cols-2 lg:grid-cols-4">
         {stats.map((s) => (
           <div key={s.label}>

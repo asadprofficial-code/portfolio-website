@@ -17,6 +17,8 @@ export const SITE = {
 // GitHub Pages-bygget använder trailingSlash – adresserna i sitemap/canonical ska matcha.
 const TRAILING = process.env.GH_PAGES === "1";
 
+export const BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH || "";
+
 export function absoluteUrl(path = "/") {
   if (/\.[a-z0-9]+$/i.test(path)) return `${SITE.url}${path}`; // filer, t.ex. bilder
   if (path === "/") return TRAILING ? `${SITE.url}/` : SITE.url;
