@@ -15,11 +15,26 @@ import FaqList from "@/components/FaqList";
 
 export const metadata = { alternates: { canonical: "/" } };
 
+const ICON_PATHS = {
+  search: "M11 4a7 7 0 1 0 0 14 7 7 0 0 0 0-14Zm9 16-4.35-4.35",
+  chart: "M4 19h16M7 15l4-4 3 3 5-6",
+  monitor: "M4 5h16v11H4zM9 20h6M12 16v4",
+  wrench: "M14.7 6.3a4 4 0 0 0-5.4 5.4L4 17l3 3 5.3-5.3a4 4 0 0 0 5.4-5.4l-2.4 2.4-2.6-.6-.6-2.6 2.6-2.5Z",
+};
+
+function LineIcon({ name }) {
+  return (
+    <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
+      <path d={ICON_PATHS[name]} />
+    </svg>
+  );
+}
+
 const FEATURES = [
-  { t: "SEO-analys", d: "Se vad som stoppar sajten och vad som ska göras först." },
-  { t: "Löpande SEO", d: "Sökord, teknik, texter och länkar – med rapport varje månad." },
-  { t: "Ny hemsida", d: "Snabb, mobilanpassad och byggd för Google från start." },
-  { t: "Underhåll", d: "Uppdateringar, säkerhetskopior och ändringar när ni behöver." },
+  { t: "SEO-analys", icon: "search", d: "Se vad som stoppar sajten och vad som ska göras först." },
+  { t: "Löpande SEO", icon: "chart", d: "Sökord, teknik, texter och länkar – med rapport varje månad." },
+  { t: "Ny hemsida", icon: "monitor", d: "Snabb, mobilanpassad och byggd för Google från start." },
+  { t: "Underhåll", icon: "wrench", d: "Uppdateringar, säkerhetskopior och ändringar när ni behöver." },
 ];
 
 const CARDS = [
@@ -87,9 +102,9 @@ const HOME_SECTIONS = [
 ];
 
 const TECH = [
-  { title: "Webb", items: ["WordPress", "Elementor", "Next.js", "React", "Tailwind", "HTML/CSS"] },
-  { title: "E-handel", items: ["Shopify", "WooCommerce", "WordPress", "Analytics 4", "Search Console", "PageSpeed"] },
-  { title: "SEO och mätning", items: ["Search Console", "Analytics 4", "Semrush", "Ahrefs", "PageSpeed", "Screaming Frog"] },
+  { title: "Webb", items: ["WordPress", "Elementor", "Next.js", "React", "Tailwind", "HTML/CSS", "Figma"] },
+  { title: "E-handel", items: ["Shopify", "WooCommerce", "WordPress", "Elementor", "Analytics 4", "PageSpeed"] },
+  { title: "SEO och mätning", items: ["Search Console", "Analytics 4", "Semrush", "PageSpeed", "Lighthouse", "Next.js"] },
 ];
 
 const FAQ = [
@@ -104,10 +119,10 @@ const FAQ = [
 export default function HomePage() {
   const swedish = VISIBLE_PROJECTS.filter((p) => p.type.includes("Sverige")).length;
   const stats = [
-    { v: `${swedish}`, l: "svenska företag vi gör SEO för" },
+    { v: "4+", l: "års erfarenhet av SEO och webb" },
     { v: `${VISIBLE_PROJECTS.length}`, l: "projekt under Referenser" },
-    { v: "2", l: "huvudtjänster: SEO och webbdesign" },
-    { v: "1 dag", l: "så snabbt svarar vi (arbetsdagar)" },
+    { v: `${swedish}`, l: "svenska företag vi gör SEO för" },
+    { v: "24 h", l: "svarstid på vardagar" },
   ];
 
   return (
@@ -144,7 +159,7 @@ export default function HomePage() {
           <div className="grid gap-4 sm:grid-cols-2">
             {FEATURES.map((f) => (
               <div key={f.t} className="card">
-                <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-brand-light font-extrabold text-brand">✓</span>
+                <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-brand text-white"><LineIcon name={f.icon} /></span>
                 <h3 className="mt-4 font-bold">{f.t}</h3>
                 <p className="mt-1 text-sm text-ink-muted">{f.d}</p>
               </div>

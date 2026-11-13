@@ -1,6 +1,6 @@
 import {
   siWordpress, siShopify, siNextdotjs, siReact, siWoocommerce, siElementor, siTailwindcss, siHtml5,
-  siGooglesearchconsole, siGoogleanalytics, siSemrush, siPagespeedinsights,
+  siGooglesearchconsole, siGoogleanalytics, siSemrush, siPagespeedinsights, siFigma, siLighthouse,
 } from "simple-icons";
 
 // Varumärkesikoner (simple-icons, CC0) för verktyg vi använder. Saknas ikon visas initialer.
@@ -20,7 +20,11 @@ const ICONS = {
   "Semrush": siSemrush,
   "PageSpeed": siPagespeedinsights,
   "PageSpeed Insights": siPagespeedinsights,
+  "Figma": siFigma,
+  "Lighthouse": siLighthouse,
 };
+
+export const hasIcon = (name) => Boolean(ICONS[name]);
 
 export default function BrandIcon({ name, size = 28, mono = false }) {
   const icon = ICONS[name];

@@ -4,10 +4,10 @@ import { VISIBLE_PROJECTS } from "@/data/projects";
 export default function StatsBand() {
   const swedish = VISIBLE_PROJECTS.filter((p) => p.type.includes("Sverige")).length;
   const stats = [
-    { value: `${swedish}`, label: "svenska företag vi gör SEO för" },
+    { value: "4+", label: "års erfarenhet av SEO och webb" },
     { value: `${VISIBLE_PROJECTS.length}`, label: "projekt under Referenser" },
-    { value: "1 dag", label: "så snabbt svarar vi (arbetsdagar)" },
-    { value: "2", label: "grundare som gör jobbet själva" },
+    { value: `${swedish}`, label: "svenska företag vi gör SEO för" },
+    { value: "24 h", label: "svarstid på vardagar" },
   ];
   return (
     <section className="bg-[#110d1f] text-white">
