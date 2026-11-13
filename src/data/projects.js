@@ -2,26 +2,6 @@
 // show:false = visas inte förrän kunden har godkänt att namnet används.
 export const PROJECTS = [
   {
-    name: "EMIRAFIX",
-    typeEn: "Shopify",
-    textEn: "Shopify store with a custom theme, mobile-friendly layout, faster load time and clear product pages.",
-    type: "Shopify",
-    image: "/img/EMIRAFIX.png",
-    url: "https://emirafix.com/",
-    text: "E-handelsbutik i Shopify med eget tema, mobilanpassning, snabbare laddtid och tydliga produktsidor.",
-    show: true,
-  },
-  {
-    name: "INDIQART",
-    typeEn: "Shopify",
-    textEn: "Shopify store for wallets focused on product presentation, performance and a simple checkout.",
-    type: "Shopify",
-    image: "/img/indiqart-wallet-store.png",
-    url: "https://indiqart.in/",
-    text: "Shopify-butik för plånböcker med fokus på produktpresentation, prestanda och ett enkelt köpflöde.",
-    show: true,
-  },
-  {
     name: "Zavya Scents",
     typeEn: "Shopify · SEO · Store management",
     textEn: "Perfume store on Shopify: design, ongoing store management and SEO.",
