@@ -39,12 +39,12 @@ const FEATURES = [
 ];
 
 const CARDS = [
-  { t: "SEO-analys", d: "Teknik, innehåll, sökord och länkar granskas – ni får en prioriterad åtgärdslista.", img: "/img/seo-dashboard.png", href: "/tjanster/seo#seo-analys-det-har-tittar-vi-pa" },
-  { t: "Teknisk SEO", d: "Laddtid, indexering, struktur och schema som gör sajten lätt för Google att förstå.", img: "/img/web-dev-workspace.png", href: "/tjanster/seo#teknisk-seo-det-har-ingar" },
-  { t: "Lokal SEO", d: "Google Företagsprofil, omdömen och sidor för området där era kunder finns.", img: "/img/about-hero.png", href: "/tjanster/seo#lokal-seo-och-google-foretagsprofil" },
-  { t: "Hemsida för småföretag", d: "En tydlig sajt som visar vad ni gör och gör det enkelt att ta kontakt.", img: "/img/homepage-hero.png", href: "/tjanster/webbdesign#det-har-kan-vi-bygga-at-er" },
-  { t: "WordPress-hemsida", d: "En sajt ni kan uppdatera själva, med SEO-grunden på plats från början.", img: "/img/content-writing-workspace.png", href: "/tjanster/webbdesign#det-har-kan-vi-bygga-at-er" },
-  { t: "Webbutik", d: "Försäljning online i Shopify eller WooCommerce, med betalning och frakt.", img: "/img/shopify-dashboard.png", href: "/tjanster/webbdesign#det-har-kan-vi-bygga-at-er" },
+  { t: "SEO-analys", d: "Teknik, innehåll, sökord och länkar granskas – ni får en prioriterad åtgärdslista.", img: "/img/seo-dashboard.webp", href: "/tjanster/seo#seo-analys-det-har-tittar-vi-pa" },
+  { t: "Teknisk SEO", d: "Laddtid, indexering, struktur och schema som gör sajten lätt för Google att förstå.", img: "/img/web-dev-workspace.webp", href: "/tjanster/seo#teknisk-seo-det-har-ingar" },
+  { t: "Lokal SEO", d: "Google Företagsprofil, omdömen och sidor för området där era kunder finns.", img: "/img/about-hero.webp", href: "/tjanster/seo#lokal-seo-och-google-foretagsprofil" },
+  { t: "Hemsida för småföretag", d: "En tydlig sajt som visar vad ni gör och gör det enkelt att ta kontakt.", img: "/img/homepage-hero.webp", href: "/tjanster/webbdesign#det-har-kan-vi-bygga-at-er" },
+  { t: "WordPress-hemsida", d: "En sajt ni kan uppdatera själva, med SEO-grunden på plats från början.", img: "/img/content-writing-workspace.webp", href: "/tjanster/webbdesign#det-har-kan-vi-bygga-at-er" },
+  { t: "Webbutik", d: "Försäljning online i Shopify eller WooCommerce, med betalning och frakt.", img: "/img/shopify-dashboard.webp", href: "/tjanster/webbdesign#det-har-kan-vi-bygga-at-er" },
 ];
 
 const HOME_SECTIONS = [
@@ -119,8 +119,15 @@ const FAQ = [
 
 export default function HomePage() {
 
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: FAQ.map((f) => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } })),
+  };
+
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       {/* 1. Ljus centrerad hero */}
       <section className="bg-[#f8f7fc] pb-20 pt-20 sm:pt-28">
         <div className="container-site hero-anim text-center">

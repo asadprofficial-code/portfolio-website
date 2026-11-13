@@ -2,7 +2,7 @@ import { SITE } from "@/lib/site";
 
 export const metadata = {
   title: "Integritetspolicy",
-  description: "Hur vi behandlar personuppgifter som du lämnar via kontaktformuläret och hur vi använder cookies.",
+  description: "Så behandlar vi personuppgifter som du lämnar via kontaktformuläret, hur länge vi sparar dem, vilka cookies vi använder och dina rättigheter enligt GDPR.",
   alternates: { canonical: "/integritetspolicy" },
 };
 

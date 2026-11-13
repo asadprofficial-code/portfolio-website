@@ -1,6 +1,6 @@
 import { notFound } from "next/navigation";
 import { SERVICES, getService } from "@/data/services";
-import { absoluteUrl } from "@/lib/site";
+import { SITE, absoluteUrl } from "@/lib/site";
 import HeroImage from "@/components/sections/HeroImage";
 import ToolsStrip from "@/components/sections/ToolsStrip";
 import TechStackGrid from "@/components/sections/TechStackGrid";
@@ -38,6 +38,16 @@ export default async function ServicePage({ params }) {
   if (!s) notFound();
 
   const schema = [
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      name: s.h1,
+      serviceType: s.name,
+      description: s.metaDescription,
+      url: absoluteUrl(`/tjanster/${s.slug}`),
+      areaServed: { "@type": "Country", name: "Sverige" },
+      provider: { "@id": `${SITE.url}/#organization` },
+    },
     {
       "@context": "https://schema.org",
       "@type": "BreadcrumbList",

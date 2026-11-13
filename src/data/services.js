@@ -6,8 +6,8 @@ export const SERVICES = [
     slug: "seo",
     name: "SEO",
     short: "SEO-analys, sökordsanalys, teknisk SEO, innehåll och länkar – med månadsrapport.",
-    image: "/img/seo-dashboard.png",
-    metaTitle: "SEO-tjänster för småföretag – sökmotoroptimering i hela Sverige",
+    image: "/img/seo-dashboard.webp",
+    metaTitle: "SEO-tjänster för småföretag i hela Sverige",
     metaDescription:
       "SEO för småföretag i hela Sverige: SEO-analys, sökordsanalys, teknisk SEO, innehåll och länkbygge. Tydlig offert och en rapport varje månad.",
     h1: "SEO-tjänster för småföretag",
@@ -22,7 +22,7 @@ export const SERVICES = [
       "Synlighet i AI-tjänster som ChatGPT och Googles AI-översikter.",
       "Månadsrapport med placeringar, trafik och förfrågningar.",
     ],
-    heroImage: "/img/seo-dashboard.png",
+    heroImage: "/img/seo-dashboard.webp",
     techTitle: "Verktygen bakom vårt SEO-arbete",
     techIntro: "Vi mäter och analyserar med samma verktyg som större byråer – och visar er siffrorna.",
     tech: [
@@ -35,7 +35,7 @@ export const SERVICES = [
       { name: "Shopify", text: "E-handel" },
     ],
     whyTitle: "Därför väljer småföretag oss för SEO",
-    whyImage: "/img/seo-dashboard.png",
+    whyImage: "/img/seo-dashboard.webp",
     why: [
       "Ni pratar direkt med den som gör jobbet – ingen säljare emellan.",
       "Skriftlig offert innan vi börjar.",
@@ -50,9 +50,9 @@ export const SERVICES = [
       { title: "Start", text: "Vi börjar med det som ger störst effekt och rapporterar varje månad." },
     ],
     alts: [
-      { image: "/img/content-writing-workspace.png", title: "En SEO-plan som passar er verksamhet", body: "Ett lokalt tjänsteföretag och en webbutik behöver olika saker. Vi börjar med vad era kunder söker efter och bygger planen därifrån – inte från en färdig mall." },
-      { image: "/img/web-dev-workspace.png", title: "Flexibelt upplägg utan krångel", body: "Börja med en analys, välj löpande SEO eller beställ en enskild insats. Ni bestämmer takten och kan ändra upplägget när verksamheten förändras.", reverse: true },
-      { image: "/img/ecommerce-dashboard.png", title: "Beslut baserade på data, inte gissningar", body: "Varje åtgärd följs upp i Search Console och Analytics. Ser vi att något inte ger effekt ändrar vi det – och berättar varför." },
+      { image: "/img/content-writing-workspace.webp", title: "En SEO-plan som passar er verksamhet", body: "Ett lokalt tjänsteföretag och en webbutik behöver olika saker. Vi börjar med vad era kunder söker efter och bygger planen därifrån – inte från en färdig mall." },
+      { image: "/img/web-dev-workspace.webp", title: "Flexibelt upplägg utan krångel", body: "Börja med en analys, välj löpande SEO eller beställ en enskild insats. Ni bestämmer takten och kan ändra upplägget när verksamheten förändras.", reverse: true },
+      { image: "/img/ecommerce-dashboard.webp", title: "Beslut baserade på data, inte gissningar", body: "Varje åtgärd följs upp i Search Console och Analytics. Ser vi att något inte ger effekt ändrar vi det – och berättar varför." },
     ],
     centeredTitle: "Från teknik till text – SEO på ett ställe",
     centeredBody: "Teknisk SEO, innehåll, lokal synlighet och länkar hänger ihop. När samma team gör allt blir det inga glapp mellan analys och genomförande.",
@@ -215,7 +215,7 @@ export const SERVICES = [
     slug: "webbdesign",
     name: "Webbdesign",
     short: "Hemsidor, WordPress-sajter, landningssidor och webbutiker för småföretag.",
-    image: "/img/web-dev-workspace.png",
+    image: "/img/web-dev-workspace.webp",
     metaTitle: "Webbdesign för småföretag – hemsida som syns i Google",
     metaDescription:
       "Webbdesign för småföretag i hela Sverige: hemsida, WordPress-sajt, landningssida eller webbutik. Mobilanpassat, snabbt och byggt för Google – med tydlig offert.",
@@ -230,7 +230,7 @@ export const SERVICES = [
       "SEO-grund från start: rubriker, metadata, sitemap och omdirigeringar.",
       "Underhåll och support efter lansering om ni vill.",
     ],
-    heroImage: "/img/services-hero.png",
+    heroImage: "/img/services-hero.webp",
     techTitle: "Plattformar och tekniker vi bygger med",
     techIntro: "Vi väljer plattform efter vad ni behöver – inte tvärtom.",
     tech: [
@@ -244,7 +244,7 @@ export const SERVICES = [
       { name: "HTML/CSS", text: "Egen kod" },
     ],
     whyTitle: "Därför väljer småföretag oss för sin hemsida",
-    whyImage: "/img/web-dev-workspace.png",
+    whyImage: "/img/web-dev-workspace.webp",
     why: [
       "Offert och tidsplan skriftligt innan vi börjar.",
       "SEO-grunden ingår alltid – inte ett tillägg.",
@@ -259,9 +259,9 @@ export const SERVICES = [
       { title: "Bygge och lansering", text: "Vi bygger i en testmiljö, lanserar och visar hur ni sköter sajten." },
     ],
     alts: [
-      { image: "/img/homepage-hero.png", title: "En hemsida som passar er verksamhet", body: "En frisör, en byggfirma och en webbutik behöver olika sidor och funktioner. Vi utgår från hur era kunder väljer leverantör och bygger sajten efter det." },
-      { image: "/img/shopify-dashboard.png", title: "Flexibelt – från enkel sajt till webbutik", body: "Börja med en enkel företagssajt och bygg ut när det behövs, med fler sidor, bokning eller en webbutik. Sajten är byggd för att kunna växa.", reverse: true },
-      { image: "/img/portfolio-hero.png", title: "Snabb, säker och lätt att sköta", body: "Ren kod, komprimerade bilder och uppdaterade system gör sajten snabb och säker. Med underhåll sköter vi uppdateringar och säkerhetskopior åt er." },
+      { image: "/img/homepage-hero.webp", title: "En hemsida som passar er verksamhet", body: "En frisör, en byggfirma och en webbutik behöver olika sidor och funktioner. Vi utgår från hur era kunder väljer leverantör och bygger sajten efter det." },
+      { image: "/img/shopify-dashboard.webp", title: "Flexibelt – från enkel sajt till webbutik", body: "Börja med en enkel företagssajt och bygg ut när det behövs, med fler sidor, bokning eller en webbutik. Sajten är byggd för att kunna växa.", reverse: true },
+      { image: "/img/portfolio-hero.webp", title: "Snabb, säker och lätt att sköta", body: "Ren kod, komprimerade bilder och uppdaterade system gör sajten snabb och säker. Med underhåll sköter vi uppdateringar och säkerhetskopior åt er." },
     ],
     centeredTitle: "Design, bygge och SEO – allt på ett ställe",
     centeredBody: "När samma team designar, bygger och optimerar för Google behöver ni inte koordinera flera leverantörer. Ni får en färdig hemsida som är redo att ge förfrågningar.",

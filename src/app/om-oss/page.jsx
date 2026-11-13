@@ -26,8 +26,8 @@ const FACTS = [
 ];
 
 const TEAM = [
-  { name: "Asad Amin", role: "Grundare – webbdesign och innehåll", image: "/img/asad-amin.jpg", text: "Bygger hemsidor och webbutiker och skriver texter som är anpassade för Google. Kundernas kontaktperson genom hela projektet." },
-  { name: "Aqsa", role: "Medgrundare – SEO", image: "/img/AQSA.png", text: "Ansvarar för SEO-analyser, teknisk SEO och struktur – så att sajterna blir lätta för Google att förstå." },
+  { name: "Asad Amin", role: "Grundare – webbdesign och innehåll", image: "/img/asad-amin.webp", text: "Bygger hemsidor och webbutiker och skriver texter som är anpassade för Google. Kundernas kontaktperson genom hela projektet." },
+  { name: "Aqsa", role: "Medgrundare – SEO", image: "/img/AQSA.webp", text: "Ansvarar för SEO-analyser, teknisk SEO och struktur – så att sajterna blir lätta för Google att förstå." },
 ];
 
 const VALUES = [
@@ -46,7 +46,7 @@ export default function OmOssPage() {
   return (
     <>
       <HeroImage
-        image="/img/about-hero.png"
+        image="/img/about-hero.webp"
         crumbs={[{ href: "/", label: "Hem" }, { label: "Om oss" }]}
         title="Om oss"
         tagline="En liten byrå för SEO och webbdesign."
@@ -113,7 +113,7 @@ export default function OmOssPage() {
       </section>
 
       <ImageText
-        image="/img/web-dev-workspace.png"
+        image="/img/web-dev-workspace.webp"
         title="Varför välja oss."
         bullets={[
           "Ett team för både hemsida och SEO – inga glapp mellan leverantörer.",

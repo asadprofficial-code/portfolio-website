@@ -4,7 +4,7 @@ import CtaBand from "@/components/CtaBand";
 
 export const metadata = {
   title: "Referenser – hemsidor, webbutiker och SEO",
-  description: "Ett urval av Shopify-butiker, webbplatser och SEO-uppdrag som vi har arbetat med.",
+  description: "Se projekt vi har arbetat med: SEO för svenska företag som Techknight, Nytt Tak, Bilping och Rut Assistans samt hemsidor och webbutiker.",
   alternates: { canonical: "/referenser" },
 };
 
