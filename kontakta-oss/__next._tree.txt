@@ -1,4 +1,4 @@
-:HL["/portfolio-website/_next/static/chunks/37c6recvvt0a3.css","style"]
+:HL["/portfolio-website/_next/static/chunks/0rt4ibr10mcrz.css","style"]
 2:[["children",{"s":"__PAGE__","h":160}]]
 1:[["children",{"s":"kontakta-oss","h":96,"c":"$Q2"}]]
-0:{"b":"U-Klaeof9Rgcmfl8IkIEG","t":{"t":{"s":"","h":80,"c":"$Q1"}}}
+0:{"b":"puwWq4RFJ8aYBEx41_rHY","t":{"t":{"s":"","h":80,"c":"$Q1"}}}
