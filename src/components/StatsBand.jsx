@@ -6,7 +6,7 @@ export default function StatsBand() {
   const stats = [
     { value: `${swedish}`, label: "svenska företag vi gör SEO för" },
     { value: `${VISIBLE_PROJECTS.length}`, label: "projekt under Referenser" },
-    { value: "24 h", label: "svar inom en arbetsdag" },
+    { value: "1 dag", label: "så snabbt svarar vi (arbetsdagar)" },
     { value: "2", label: "grundare som gör jobbet själva" },
   ];
   return (
