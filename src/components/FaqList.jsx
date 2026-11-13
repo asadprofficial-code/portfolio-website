@@ -2,7 +2,7 @@ export default function FaqList({ items, title = "Vanliga frågor" }) {
   if (!items?.length) return null;
   return (
     <section className="mt-16">
-      <h2 className="h2">{title}</h2>
+      {title && <h2 className="h2">{title}</h2>}
       <div className="mt-6 divide-y divide-line rounded-2xl border border-line">
         {items.map((f) => (
           <details key={f.q} className="group p-5">

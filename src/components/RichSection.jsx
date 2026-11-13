@@ -1,10 +1,13 @@
 // Samma sektionsformat som Techknights tjänstesidor: body, bullets (ordered), table, after.
+export const slugify = (t) =>
+  t.toLowerCase().replace(/[åä]/g, "a").replace(/ö/g, "o").replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+
 const asList = (v) => (Array.isArray(v) ? v : v ? [v] : []);
 
 export default function RichSection({ sec }) {
   const List = sec.ordered ? "ol" : "ul";
   return (
-    <section className="mt-14">
+    <section className="mt-14 scroll-mt-24" id={slugify(sec.h2)}>
       <h2 className="h2">{sec.h2}</h2>
       <div className="prose-site mt-5">
         {asList(sec.body).map((p) => <p key={p}>{p}</p>)}
