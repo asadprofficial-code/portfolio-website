@@ -19,3 +19,46 @@ body { @apply bg-white text-ink antialiased; font-family: Inter, ui-sans-serif, 
   .card { @apply rounded-2xl border border-line bg-white p-6; }
   .field { @apply w-full rounded-xl border border-line bg-white px-4 py-3 text-[15px] outline-none focus:border-brand focus:ring-2 focus:ring-brand/20; }
 }
+
+/* ---------- Animationer ---------- */
+/* Innehållet döljs bara när JavaScript körs (html.js-reveal), så Google och besökare utan JS ser allt direkt. */
+html.js-reveal [data-reveal] { opacity: 0; transform: translateY(28px); }
+html.js-reveal [data-reveal].is-visible {
+  opacity: 1; transform: none;
+  transition: opacity .7s cubic-bezier(.2,.65,.3,1), transform .7s cubic-bezier(.2,.65,.3,1);
+  transition-delay: var(--reveal-delay, 0ms);
+}
+
+/* Hero: rubrik, text och knappar glider in vid sidladdning */
+@keyframes hero-in { from { opacity: 0; transform: translateY(22px); } to { opacity: 1; transform: none; } }
+.hero-anim > * { animation: hero-in .8s cubic-bezier(.2,.65,.3,1) both; }
+.hero-anim > *:nth-child(2) { animation-delay: .08s; }
+.hero-anim > *:nth-child(3) { animation-delay: .16s; }
+.hero-anim > *:nth-child(4) { animation-delay: .24s; }
+.hero-anim > *:nth-child(5) { animation-delay: .32s; }
+
+/* Långsam zoom på hero-bilder */
+@keyframes slow-zoom { from { transform: scale(1.08); } to { transform: scale(1); } }
+.hero-zoom { animation: slow-zoom 2.4s cubic-bezier(.2,.65,.3,1) both; }
+
+/* Verktygsraden rullar som ett band */
+@keyframes marquee { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+.marquee-track { animation: marquee 38s linear infinite; width: max-content; }
+.marquee:hover .marquee-track { animation-play-state: paused; }
+
+/* Kort som lyfter vid hovring */
+main a.card, main a.group, main article.group {
+  transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease;
+}
+main a.card:hover, main a.group:hover, main article.group:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 22px 45px -20px rgba(76, 29, 149, .35);
+}
+.btn { transition: transform .2s ease, background-color .2s ease, color .2s ease, box-shadow .2s ease; }
+.btn:hover { transform: translateY(-2px); }
+
+@media (prefers-reduced-motion: reduce) {
+  html.js-reveal [data-reveal] { opacity: 1; transform: none; }
+  .hero-anim > *, .hero-zoom, .marquee-track { animation: none; }
+  main a.card:hover, main a.group:hover, main article.group:hover, .btn:hover { transform: none; }
+}

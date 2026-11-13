@@ -3,6 +3,7 @@ import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import CookieConsent from "@/components/CookieConsent";
+import RevealOnScroll from "@/components/RevealOnScroll";
 import { SITE, absoluteUrl } from "@/lib/site";
 
 const GA_ID = process.env.NEXT_PUBLIC_GA_ID;
@@ -49,6 +50,7 @@ gtag('consent','default',{analytics_storage:'denied',ad_storage:'denied',ad_user
         <Header />
         <main>{children}</main>
         <Footer />
+        <RevealOnScroll />
         {GA_ID && <CookieConsent />}
       </body>
     </html>

@@ -123,7 +123,7 @@ export default function HomePage() {
     <>
       {/* 1. Ljus centrerad hero */}
       <section className="bg-[#f8f7fc] pb-20 pt-20 sm:pt-28">
-        <div className="container-site text-center">
+        <div className="container-site hero-anim text-center">
           <p className="text-xs font-bold uppercase tracking-[0.16em] text-ink-muted">{SITE.name} · SEO och webbdesign</p>
           <h1 className="mx-auto mt-6 max-w-4xl text-[44px] font-extrabold leading-[0.95] tracking-[-0.055em] sm:text-[80px]">
             SEO och webbdesign för småföretag i hela Sverige

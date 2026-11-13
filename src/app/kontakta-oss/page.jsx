@@ -40,7 +40,7 @@ export default function KontaktaOssPage() {
   return (
     <>
       <section className="bg-[#110d1f] pb-40 pt-20 text-white">
-        <div className="container-site"><div className="max-w-3xl">
+        <div className="container-site"><div className="hero-anim max-w-3xl">
           <p className="eyebrow !text-[#c4b5fd]">Kontakt</p>
           <h1 className="mt-3 text-[40px] font-extrabold leading-[0.98] tracking-[-0.05em] sm:text-[60px]">Kontakta oss</h1>
           <p className="mt-5 text-lg text-white/70">Berätta vad ni behöver hjälp med så får ni ett förslag och en offert. {SITE.responseTime}</p>

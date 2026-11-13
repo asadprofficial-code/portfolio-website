@@ -6,10 +6,10 @@ export default function HeroImage({ image, crumbs = [], title, tagline, descript
   const bg = image?.startsWith("/") ? `${BASE_PATH}${image}` : image;
   return (
     <section className={`relative flex items-center overflow-hidden bg-ink ${tall ? "min-h-[78vh]" : "min-h-[52vh]"}`}>
-      <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: `url(${bg})` }} aria-hidden />
+      <div className="hero-zoom absolute inset-0 bg-cover bg-center" style={{ backgroundImage: `url(${bg})` }} aria-hidden />
       <div className="absolute inset-0 bg-gradient-to-r from-[#110d1f]/90 via-[#110d1f]/70 to-[#110d1f]/40" aria-hidden />
       <div className="container-site relative z-10 py-24">
-        <div className="max-w-[720px]">
+        <div className="hero-anim max-w-[720px]">
           {crumbs.length > 0 && (
             <nav aria-label="Brödsmulor" className="mb-6 text-sm text-white/60">
               {crumbs.map((c, i) => (
