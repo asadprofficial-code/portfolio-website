@@ -49,7 +49,13 @@ export default function ContactForm({ defaultService = "" }) {
       });
       const data = await res.json().catch(() => ({}));
       const failed = !res.ok || data.success === "false" || data.success === false;
-      if (failed) throw new Error(data.error || "Något gick fel. Försök igen eller mejla oss.");
+      if (failed) {
+        // FormSubmit: första förfrågan kräver att mottagaren aktiverar formuläret via e-post.
+        if (/activat/i.test(data.message || "")) {
+          throw new Error("Formuläret väntar på aktivering. Mejla oss direkt så länge – vi svarar inom en arbetsdag.");
+        }
+        throw new Error(data.error || data.message || "Något gick fel. Försök igen eller mejla oss.");
+      }
       // generate_lead skickas BARA när förfrågan har kommit fram (samma som Techknight).
       // Markera endast generate_lead som nyckelhändelse i GA4 → Admin → Events.
       trackEvent("generate_lead", { form_name: "kontaktformular", service: form.service || "annat" });
