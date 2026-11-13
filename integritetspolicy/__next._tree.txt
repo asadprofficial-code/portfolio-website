@@ -1,5 +1,5 @@
-:HL["/portfolio-website/_next/static/chunks/2mi7s0hh6akwr.css","style"]
+:HL["/portfolio-website/_next/static/chunks/0adtjzlric0jz.css","style"]
 :HC["/",""]
 2:[["children",{"s":"__PAGE__","h":160}]]
 1:[["children",{"s":"integritetspolicy","h":96,"c":"$Q2"}]]
-0:{"b":"h8rbBE4YIP6mmkRQkx17e","t":{"t":{"s":"","h":80,"c":"$Q1"}}}
+0:{"b":"ndhkLPv4ja2NW2bUcCBJM","t":{"t":{"s":"","h":80,"c":"$Q1"}}}
