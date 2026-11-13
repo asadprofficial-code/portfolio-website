@@ -17,6 +17,14 @@ export const SITE = {
 // GitHub Pages-bygget använder trailingSlash – adresserna i sitemap/canonical ska matcha.
 const TRAILING = process.env.GH_PAGES === "1";
 
+// Siffror i statistikbanden. Ändra här så uppdateras alla sidor.
+export const STATS = [
+  { value: 100, suffix: "+", label: "genomförda projekt" },
+  { value: 40, suffix: "+", label: "kunder i flera länder" },
+  { value: 4, suffix: "+", label: "års erfarenhet av SEO och webb" },
+  { value: 24, suffix: " h", label: "svarstid på vardagar" },
+];
+
 export const BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH || "";
 
 export function absoluteUrl(path = "/") {

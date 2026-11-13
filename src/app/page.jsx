@@ -8,6 +8,7 @@ import ProjectsFilter from "@/components/sections/ProjectsFilter";
 import TechTabs from "@/components/sections/TechTabs";
 import RichSection from "@/components/RichSection";
 import FaqList from "@/components/FaqList";
+import StatsBand from "@/components/StatsBand";
 
 // Startsidan följer Techknights startsida: ljus centrerad hero → partnerrad → "allt samlat" + 4 kort →
 // 6 bildkort → SEO-text → siffror → 4 stora tjänstekort → tjänstelänkar → projekt med filter →
@@ -117,13 +118,6 @@ const FAQ = [
 ];
 
 export default function HomePage() {
-  const swedish = VISIBLE_PROJECTS.filter((p) => p.type.includes("Sverige")).length;
-  const stats = [
-    { v: "4+", l: "års erfarenhet av SEO och webb" },
-    { v: `${VISIBLE_PROJECTS.length}`, l: "projekt under Referenser" },
-    { v: `${swedish}`, l: "svenska företag vi gör SEO för" },
-    { v: "24 h", l: "svarstid på vardagar" },
-  ];
 
   return (
     <>
@@ -193,17 +187,8 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* 6. Siffror (ljus) */}
-      <section className="border-y border-line bg-white py-14">
-        <div className="container-site grid gap-8 text-center sm:grid-cols-2 lg:grid-cols-4">
-          {stats.map((s) => (
-            <div key={s.l}>
-              <p className="text-5xl font-extrabold tracking-[-0.04em]">{s.v}</p>
-              <p className="mt-2 text-sm text-ink-muted">{s.l}</p>
-            </div>
-          ))}
-        </div>
-      </section>
+      {/* 6. Siffror (ljus, räknar upp) */}
+      <StatsBand dark={false} />
 
       {/* 7. Stora tjänstekort */}
       <section className="bg-white py-24">
