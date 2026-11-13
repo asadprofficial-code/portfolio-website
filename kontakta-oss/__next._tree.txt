@@ -1,4 +1,4 @@
 :HL["/portfolio-website/_next/static/chunks/2uxonvahes48q.css","style"]
 2:[["children",{"s":"__PAGE__","h":160}]]
 1:[["children",{"s":"kontakta-oss","h":96,"c":"$Q2"}]]
-0:{"b":"X7T_olwayKq9L9UztMaCD","t":{"t":{"s":"","h":80,"c":"$Q1"}}}
+0:{"b":"_JOmyOLTlVtFPQ2WIaQnZ","t":{"t":{"s":"","h":80,"c":"$Q1"}}}
