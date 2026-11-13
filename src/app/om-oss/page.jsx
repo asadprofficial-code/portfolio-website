@@ -4,20 +4,20 @@ import CtaBand from "@/components/CtaBand";
 
 export const metadata = {
   title: "Om oss – vilka vi är och hur vi arbetar",
-  description: "Två grundare med fokus på Shopify, webbutveckling, SEO och innehåll. Vi arbetar på distans med företag i hela Sverige.",
+  description: "Två grundare som arbetar med SEO och webbdesign för småföretag. Vi arbetar på distans med företag i hela Sverige.",
   alternates: { canonical: "/om-oss" },
 };
 
 const TEAM = [
   {
     name: "Asad Amin",
-    role: "Grundare – Shopify, sociala medier och innehåll",
+    role: "Grundare – webbdesign och innehåll",
     image: "/img/asad-amin.jpg",
-    text: "Asad arbetar med Shopify-butiker, marknadsföring i sociala medier och texter. Han är kundernas kontaktperson genom hela projektet.",
+    text: "Asad bygger hemsidor och webbutiker och skriver texter som är anpassade för Google. Han är kundernas kontaktperson genom hela projektet.",
   },
   {
     name: "Aqsa",
-    role: "Medgrundare – SEO och webbutveckling",
+    role: "Medgrundare – SEO",
     image: "/img/AQSA.png",
     text: "Aqsa ansvarar för teknisk SEO och webbutveckling: snabba sajter med en struktur som gör det lättare att ranka.",
   },
@@ -36,7 +36,7 @@ export default function OmOssPage() {
         <p className="eyebrow">Om oss</p>
         <h1 className="h1 mt-4">En liten byrå med två grundare</h1>
         <p className="lead mt-5 max-w-3xl">
-          Vi hjälper företag att bygga och växa online med Shopify, webbutveckling, SEO och innehåll. {SITE.location}
+          Vi hjälper småföretag att växa online med SEO och webbdesign. {SITE.location}
         </p>
       </section>
 

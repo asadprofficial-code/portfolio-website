@@ -20,7 +20,7 @@ const STEPS = [
 const FAQ = [
   { q: "Var finns ni?", a: `${SITE.location} Möten sker via video, och vi svarar på svenska och engelska.` },
   { q: "Vad kostar det?", a: "Det beror på omfattningen. Efter en kort genomgång får ni ett fast pris, så att ni vet kostnaden innan arbetet börjar." },
-  { q: "Kan ni hjälpa en butik som redan finns?", a: "Ja. Vi tar över och vidareutvecklar befintliga Shopify-butiker och webbplatser. Vi börjar alltid med en genomgång av det som finns." },
+  { q: "Kan ni hjälpa en butik som redan finns?", a: "Ja. Vi tar över och förbättrar befintliga hemsidor och webbutiker. Vi börjar alltid med en genomgång av det som finns." },
 ];
 
 export default function HomePage() {
@@ -28,11 +28,11 @@ export default function HomePage() {
     <>
       <section className="container-site grid items-center gap-10 pt-14 sm:pt-20 lg:grid-cols-2">
         <div>
-          <p className="eyebrow">Shopify · Webb · SEO</p>
-          <h1 className="h1 mt-4">Shopify-butiker, webbplatser och SEO för svenska företag</h1>
+          <p className="eyebrow">SEO · Webbdesign</p>
+          <h1 className="h1 mt-4">SEO och webbdesign för småföretag i hela Sverige</h1>
           <p className="lead mt-5">
-            Vi bygger och förbättrar webbutiker och företagssajter, och ser till att de syns i Google. Ni får ett fast pris
-            efter genomgång och regelbundna avstämningar via video.
+            Vi bygger hemsidor som ger förfrågningar och ser till att de syns i Google. Ni får ett fast pris
+            efter genomgång och pratar direkt med dem som gör jobbet.
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
             <Link href="/kontakta-oss" className="btn-primary">Berätta om ert projekt</Link>
@@ -52,7 +52,7 @@ export default function HomePage() {
           <h2 className="h2 mt-3">En liten byrå där ni pratar direkt med dem som gör jobbet</h2>
         </div>
         <div className="prose-site">
-          <p>Vi är två grundare som bygger Shopify-butiker och webbplatser och arbetar med SEO och innehåll. Ni har samma kontaktperson från första mötet till lansering.</p>
+          <p>Vi är två grundare som arbetar med SEO och bygger hemsidor och webbutiker åt småföretag. Ni har samma kontaktperson från första mötet till lansering.</p>
           <p>Vi arbetar på distans och stämmer av via video. Före start får ni ett skriftligt förslag med vad som ingår, tidsplan och fast pris.</p>
         </div>
       </section>
@@ -60,7 +60,7 @@ export default function HomePage() {
       <section className="container-site mt-24" id="tjanster">
         <p className="eyebrow">Tjänster</p>
         <h2 className="h2 mt-3">Det här hjälper vi till med</h2>
-        <div className="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-8 grid gap-5 md:grid-cols-2">
           {SERVICES.map((s) => (
             <Link key={s.slug} href={`/tjanster/${s.slug}`} className="card transition-colors hover:border-brand">
               <h3 className="text-lg font-bold">{s.name}</h3>

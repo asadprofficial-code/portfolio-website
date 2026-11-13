@@ -1,11 +1,10 @@
-import { SERVICES } from "@/data/services";
 import { VISIBLE_PROJECTS } from "@/data/projects";
 
 // Bara siffror som går att kontrollera på sajten – inga påhittade resultat.
 export default function StatsBand() {
   const stats = [
     { value: `${VISIBLE_PROJECTS.length}`, label: "projekt visas under Referenser" },
-    { value: `${SERVICES.length}`, label: "tjänster inom webb, e-handel och SEO" },
+    { value: "1", label: "fast pris – innan arbetet börjar" },
     { value: "1", label: "arbetsdag – så snabbt svarar vi" },
     { value: "2", label: "grundare som gör jobbet själva" },
   ];

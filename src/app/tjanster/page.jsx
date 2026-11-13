@@ -4,8 +4,8 @@ import { SERVICES } from "@/data/services";
 import CtaBand from "@/components/CtaBand";
 
 export const metadata = {
-  title: "Tjänster – Shopify, webbutveckling, SEO och innehåll",
-  description: "Shopify-utveckling, e-handelsoptimering, webbutveckling, SEO, sociala medier och texter för företag i hela Sverige.",
+  title: "Tjänster – SEO och webbdesign för småföretag",
+  description: "SEO och webbdesign för småföretag i hela Sverige: SEO-analys, löpande SEO, hemsidor, landningssidor och webbutiker till fast pris.",
   alternates: { canonical: "/tjanster" },
 };
 
@@ -15,7 +15,7 @@ export default function TjansterPage() {
       <section className="container-site pt-14 sm:pt-20">
         <p className="eyebrow">Tjänster</p>
         <h1 className="h1 mt-4">Våra tjänster</h1>
-        <p className="lead mt-5 max-w-3xl">Från ny Shopify-butik till sökmotoroptimering och texter. Välj en tjänst för att läsa vad som ingår och hur vi arbetar.</p>
+        <p className="lead mt-5 max-w-3xl">Vi arbetar med två saker: SEO som ger fler kunder och hemsidor som är byggda för att synas. Välj en tjänst för att läsa vad som ingår.</p>
       </section>
       <section className="container-site mt-12 grid gap-6 md:grid-cols-2">
         {SERVICES.map((s) => (
@@ -27,7 +27,7 @@ export default function TjansterPage() {
               <h2 className="text-lg font-bold">{s.name}</h2>
               <p className="mt-2 text-sm text-ink-muted">{s.short}</p>
               <ul className="mt-3 space-y-1 text-sm text-ink-muted">
-                {s.included.slice(0, 3).map((i) => <li key={i}>• {i}</li>)}
+                {s.bullets.slice(0, 3).map((i) => <li key={i}>• {i}</li>)}
               </ul>
             </div>
           </Link>

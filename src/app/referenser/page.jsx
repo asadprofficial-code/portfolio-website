@@ -3,7 +3,7 @@ import { VISIBLE_PROJECTS } from "@/data/projects";
 import CtaBand from "@/components/CtaBand";
 
 export const metadata = {
-  title: "Referenser – Shopify-butiker, webbplatser och SEO",
+  title: "Referenser – hemsidor, webbutiker och SEO",
   description: "Ett urval av Shopify-butiker, webbplatser och SEO-uppdrag som vi har arbetat med.",
   alternates: { canonical: "/referenser" },
 };

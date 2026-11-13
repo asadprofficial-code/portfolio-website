@@ -3,6 +3,8 @@
 export const PROJECTS = [
   {
     name: "EMIRAFIX",
+    typeEn: "Shopify",
+    textEn: "Shopify store with a custom theme, mobile-friendly layout, faster load time and clear product pages.",
     type: "Shopify",
     image: "/img/EMIRAFIX.png",
     url: "https://emirafix.com/",
@@ -11,6 +13,8 @@ export const PROJECTS = [
   },
   {
     name: "INDIQART",
+    typeEn: "Shopify",
+    textEn: "Shopify store for wallets focused on product presentation, performance and a simple checkout.",
     type: "Shopify",
     image: "/img/indiqart-wallet-store.png",
     url: "https://indiqart.in/",
@@ -19,6 +23,8 @@ export const PROJECTS = [
   },
   {
     name: "Zavya Scents",
+    typeEn: "Shopify · SEO · Store management",
+    textEn: "Perfume store on Shopify: design, ongoing store management and SEO.",
     type: "Shopify · SEO · Butiksdrift",
     image: "/img/shopify-dashboard.png",
     url: "https://zavyascents.store/",
@@ -27,6 +33,8 @@ export const PROJECTS = [
   },
   {
     name: "Riwaje",
+    typeEn: "Shopify",
+    textEn: "Shopify store for menswear with mobile-friendly product views and a simplified checkout.",
     type: "Shopify",
     image: "/img/ecommerce-dashboard.png",
     url: "https://riwaje.com/",
@@ -35,6 +43,8 @@ export const PROJECTS = [
   },
   {
     name: "Consen",
+    typeEn: "WordPress",
+    textEn: "Website for a finance and consulting firm built with WordPress and Elementor Pro, with form integrations.",
     type: "WordPress",
     image: "/img/consen-business-growth.png",
     url: "",
@@ -43,6 +53,8 @@ export const PROJECTS = [
   },
   {
     name: "DZZENIC",
+    typeEn: "Web development · SEO",
+    textEn: "Agency website in custom HTML/CSS with ongoing SEO and performance improvements.",
     type: "Webbutveckling · SEO",
     image: "/img/dezzenic-agency.png",
     url: "https://dzzenic.netlify.app/",
@@ -51,6 +63,8 @@ export const PROJECTS = [
   },
   {
     name: "TheNextDevs",
+    typeEn: "SEO",
+    textEn: "Ongoing SEO for an agency website.",
     type: "SEO",
     image: "/img/web-dev-workspace.png",
     url: "https://thenextdevs.com/",
@@ -59,6 +73,8 @@ export const PROJECTS = [
   },
   {
     name: "Techknight",
+    typeEn: "SEO · Sweden",
+    textEn: "Ongoing SEO for an IT consultancy in Kista, Stockholm.",
     type: "SEO · Sverige",
     image: "/img/techknight-agency.png",
     url: "https://techknight.se/",
@@ -67,6 +83,8 @@ export const PROJECTS = [
   },
   {
     name: "Nytt Tak i Stockholm",
+    typeEn: "SEO · Sweden",
+    textEn: "Local SEO for a roofing company in Stockholm.",
     type: "SEO · Sverige",
     image: "/img/nytta-roofing.png",
     url: "https://www.nytttakisthlm.se/",
@@ -76,3 +94,7 @@ export const PROJECTS = [
 ];
 
 export const VISIBLE_PROJECTS = PROJECTS.filter((p) => p.show);
+
+export function getProjects(lang = "sv") {
+  return VISIBLE_PROJECTS.map((p) => (lang === "en" ? { ...p, type: p.typeEn, text: p.textEn } : p));
+}

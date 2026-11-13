@@ -9,7 +9,7 @@ export default function Footer() {
         <div>
           <p className="text-xl font-extrabold">{SITE.name}<span className="text-brand">.</span></p>
           <p className="mt-3 text-sm leading-relaxed text-ink-muted">
-            Shopify, webbutveckling och SEO för svenska företag. {SITE.location}
+            SEO och webbdesign för småföretag i hela Sverige. {SITE.location}
           </p>
         </div>
         <div>

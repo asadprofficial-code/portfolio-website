@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import { SERVICES, getService } from "@/data/services";
 import ContactForm from "@/components/ContactForm";
 import FaqList from "@/components/FaqList";
+import RichSection from "@/components/RichSection";
 import { absoluteUrl } from "@/lib/site";
 
 export const dynamicParams = false;
@@ -56,9 +57,16 @@ export default async function ServicePage({ params }) {
         </nav>
         <div className="mt-8 grid items-center gap-10 lg:grid-cols-2">
           <div>
-            <h1 className="h1">{s.h1}</h1>
-            <p className="lead mt-5">{s.intro}</p>
-            <Link href="#kontakt" className="btn-primary mt-8">Få ett förslag</Link>
+            <p className="eyebrow">{s.name}</p>
+            <h1 className="h1 mt-3">{s.h1}</h1>
+            <p className="mt-4 text-lg font-semibold text-ink">{s.tagline}</p>
+            <p className="lead mt-3">{s.intro}</p>
+            <ul className="mt-6 space-y-2">
+              {s.bullets.map((b) => (
+                <li key={b} className="flex gap-3 text-[15px] text-ink-muted"><span className="font-bold text-brand">✓</span>{b}</li>
+              ))}
+            </ul>
+            <Link href="#kontakt" className="btn-primary mt-7">Få ett förslag</Link>
           </div>
           <div className="relative aspect-square overflow-hidden rounded-3xl border border-line">
             <Image src={s.image} alt={s.name} fill priority sizes="(min-width:1024px) 520px, 100vw" className="object-cover" />
@@ -67,23 +75,15 @@ export default async function ServicePage({ params }) {
       </section>
 
       <section className="container-site mt-16 grid gap-12 lg:grid-cols-[1fr_380px]">
-        <div>
-          <h2 className="h2">Det här ingår</h2>
-          <ul className="mt-5 space-y-3">
-            {s.included.map((i) => (
-              <li key={i} className="flex gap-3 text-ink-muted"><span className="font-bold text-brand">✓</span>{i}</li>
-            ))}
-          </ul>
-          {s.sections.map((sec) => (
-            <div key={sec.h2} className="mt-12">
-              <h2 className="h2">{sec.h2}</h2>
-              <div className="prose-site mt-4"><p>{sec.body}</p></div>
-            </div>
-          ))}
+        <div className="min-w-0">
+          {s.sections.map((sec) => <RichSection key={sec.h2} sec={sec} />)}
           <FaqList items={s.faq} />
         </div>
-        <aside className="card h-fit">
-          <p className="font-bold">Fler tjänster</p>
+        <aside className="card h-fit lg:sticky lg:top-24">
+          <p className="font-bold">Få ett fast pris</p>
+          <p className="mt-2 text-sm text-ink-muted">Berätta kort vad ni behöver så får ni ett förslag inom en arbetsdag.</p>
+          <Link href="#kontakt" className="btn-primary mt-4 w-full">Kontakta oss</Link>
+          <p className="mt-6 font-bold">Fler tjänster</p>
           <ul className="mt-3 space-y-2 text-sm">
             {others.map((o) => <li key={o.slug}><Link href={`/tjanster/${o.slug}`} className="text-brand hover:underline">{o.name}</Link></li>)}
           </ul>

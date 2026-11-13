@@ -10,11 +10,11 @@ const GA_ID = process.env.NEXT_PUBLIC_GA_ID;
 export const metadata = {
   metadataBase: new URL(SITE.url),
   title: {
-    default: "Shopify, webbutveckling och SEO för svenska företag | ASAD",
+    default: "SEO och webbdesign för småföretag i hela Sverige | ASAD",
     template: `%s | ${SITE.name}`,
   },
   description:
-    "Vi bygger Shopify-butiker och webbplatser och arbetar med SEO för företag i hela Sverige. Fast pris efter genomgång och videomöten på distans.",
+    "SEO och webbdesign för småföretag i hela Sverige. Hemsidor som syns i Google, fast pris efter genomgång och direktkontakt med dem som gör jobbet.",
   alternates: { canonical: "/" },
   openGraph: { type: "website", locale: "sv_SE", siteName: SITE.name, images: [absoluteUrl("/img/homepage-hero.png")] },
   robots: { index: true, follow: true },
