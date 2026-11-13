@@ -73,27 +73,42 @@ export const PROJECTS = [
   },
   {
     name: "Techknight",
-    typeEn: "SEO · Sweden",
-    textEn: "Ongoing SEO for an IT consultancy in Kista, Stockholm.",
     type: "SEO · Sverige",
     image: "/img/techknight-agency.png",
     url: "https://techknight.se/",
-    text: "Löpande SEO för ett IT-konsultbolag i Kista, Stockholm.",
-    show: false,
+    text: "Löpande SEO för ett IT-konsultbolag: sökordsanalys, tjänstesidor, teknisk SEO och uppföljning i Search Console.",
+    show: true,
   },
   {
     name: "Nytt Tak i Stockholm",
-    typeEn: "SEO · Sweden",
-    textEn: "Local SEO for a roofing company in Stockholm.",
     type: "SEO · Sverige",
     image: "/img/nytta-roofing.png",
-    url: "https://www.nytttakisthlm.se/",
-    text: "Lokal SEO för en takläggare i Stockholm.",
-    show: false,
+    url: "https://nytttakisthlm.se/",
+    text: "Lokal SEO för ett takläggningsföretag: tjänstesidor, lokal synlighet och uppföljning.",
+    show: true,
+  },
+  {
+    name: "Bilping",
+    type: "SEO · Sverige",
+    image: "/img/ecommerce-dashboard.png",
+    url: "https://bilping.se/",
+    text: "SEO för en svensk tjänst där privatpersoner och företag säljer sin bil via budgivning från handlare.",
+    show: true,
+  },
+  {
+    name: "Rut Assistans",
+    type: "SEO · Sverige",
+    image: "/img/seo-dashboard.png",
+    url: "https://rutassistans.se/",
+    text: "SEO för en anordnare av personlig assistans enligt LSS: sökordsanalys, guider och tjänstesidor.",
+    show: true,
   },
 ];
 
-export const VISIBLE_PROJECTS = PROJECTS.filter((p) => p.show);
+// Svenska projekt först – de är mest relevanta för svenska kunder.
+export const VISIBLE_PROJECTS = PROJECTS.filter((p) => p.show).sort(
+  (a, b) => Number(b.type.includes("Sverige")) - Number(a.type.includes("Sverige"))
+);
 
 export function getProjects(lang = "sv") {
   return VISIBLE_PROJECTS.map((p) => (lang === "en" ? { ...p, type: p.typeEn, text: p.textEn } : p));
