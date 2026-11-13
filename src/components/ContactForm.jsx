@@ -95,7 +95,7 @@ export default function ContactForm({ defaultService = "" }) {
       </label>
 
       <label className="flex items-start gap-3 text-sm text-ink-muted">
-        <input type="checkbox" className="mt-1 h-4 w-4 accent-[#0f6b7d]" checked={form.consent} onChange={set("consent")} required />
+        <input type="checkbox" className="mt-1 h-4 w-4 accent-[#5b21b6]" checked={form.consent} onChange={set("consent")} required />
         <span>Jag godkänner att mina uppgifter används för att besvara förfrågan, enligt <Link href="/integritetspolicy" className="text-brand underline">integritetspolicyn</Link>.</span>
       </label>
 

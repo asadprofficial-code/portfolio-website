@@ -4,9 +4,9 @@ export default {
   theme: {
     extend: {
       colors: {
-        brand: { DEFAULT: "#0f6b7d", dark: "#0b5260", light: "#e6f2f4" },
-        ink: { DEFAULT: "#0e1f23", muted: "#5b6a6d" },
-        line: "#dde5e6",
+        brand: { DEFAULT: "#5b21b6", dark: "#4c1d95", light: "#f1ebfd" },
+        ink: { DEFAULT: "#14111f", muted: "#5f5a6e" },
+        line: "#e6e1ef",
       },
       maxWidth: { site: "1160px" },
     },

@@ -31,10 +31,10 @@ export function escapeHtml(value) {
     .replace(/'/g, "&#39;");
 }
 
-const BRAND = "#0f6b7d";
-const TEXT_DARK = "#0e1f23";
-const TEXT_MUTED = "#5b6a6d";
-const BORDER = "#dde5e6";
+const BRAND = "#5b21b6";
+const TEXT_DARK = "#14111f";
+const TEXT_MUTED = "#5f5a6e";
+const BORDER = "#e6e1ef";
 
 // Tabellbaserad layout med inline-stilar – fungerar i Outlook, Gmail och Apple Mail.
 export function renderEmailLayout({ preheader = "", heading, bodyHtml }) {

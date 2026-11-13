@@ -5,6 +5,8 @@ import { VISIBLE_PROJECTS } from "@/data/projects";
 import { SITE } from "@/lib/site";
 import CtaBand from "@/components/CtaBand";
 import FaqList from "@/components/FaqList";
+import StatsBand from "@/components/StatsBand";
+import TechStack from "@/components/TechStack";
 
 export const metadata = { alternates: { canonical: "/" } };
 
@@ -43,6 +45,18 @@ export default function HomePage() {
         </div>
       </section>
 
+
+      <section className="container-site mt-24 grid gap-8 lg:grid-cols-2">
+        <div>
+          <p className="eyebrow">Om ASAD</p>
+          <h2 className="h2 mt-3">En liten byrå där ni pratar direkt med dem som gör jobbet</h2>
+        </div>
+        <div className="prose-site">
+          <p>Vi är två grundare som bygger Shopify-butiker och webbplatser och arbetar med SEO och innehåll. Ni har samma kontaktperson från första mötet till lansering.</p>
+          <p>Vi arbetar på distans och stämmer av via video. Före start får ni ett skriftligt förslag med vad som ingår, tidsplan och fast pris.</p>
+        </div>
+      </section>
+
       <section className="container-site mt-24" id="tjanster">
         <p className="eyebrow">Tjänster</p>
         <h2 className="h2 mt-3">Det här hjälper vi till med</h2>
@@ -56,6 +70,8 @@ export default function HomePage() {
           ))}
         </div>
       </section>
+
+      <StatsBand />
 
       <section className="container-site mt-24" id="referenser">
         <div className="flex flex-wrap items-end justify-between gap-4">
@@ -80,6 +96,8 @@ export default function HomePage() {
           ))}
         </div>
       </section>
+
+      <TechStack />
 
       <section className="container-site mt-24">
         <p className="eyebrow">Arbetssätt</p>
