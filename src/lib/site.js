@@ -10,7 +10,7 @@ export const SITE = {
   bookingUrl: "",
   linkedin: "https://www.linkedin.com/in/asad-amin-8544b2397/",
   fiverr: "https://www.fiverr.com/asadasghar25",
-  location: "Vi arbetar på distans från Pakistan med kunder i hela Sverige.",
+  location: "Ett internationellt team som arbetar på distans med kunder i hela Sverige.",
   responseTime: "Vi svarar inom en arbetsdag.",
 };
 
